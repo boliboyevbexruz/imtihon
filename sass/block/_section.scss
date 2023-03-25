@@ -1,0 +1,39 @@
+.header {
+    width: 1400px;
+    height: 69px;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    background: #fff;
+    backdrop-filter: blur(12.5px);
+
+    @media  (max-width:$tablet) {
+        width: 952px;
+        height: 69px;
+        position: fixed;
+        z-index: 2;
+        display: flex;
+        background: #fff;
+        backdrop-filter: blur(12.5px);
+}
+
+@media (max-width:$phone) {
+    width: 768px;
+    height: 69px;
+}
+
+.hamburger {
+    @media (max-width:$phone) {
+        &::after,
+        &::before {
+            content: "";
+            width: 25px;
+            height: 3px;
+            background-color: black;
+            display: block;
+            margin: 5px 0;
+
+        }
+    }
+}
+}
